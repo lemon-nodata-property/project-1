@@ -29,6 +29,13 @@
 -- GROUP BY 1
 -- ORDER BY 2 DESC
 
+-- 주택 유형+모델 묶어서 종류별로 확인
+-- SELECT concat(flat_type, " ", flat_model) AS type_model, COUNT(concat(flat_type, " ", flat_model)) AS cnt_type_model
+-- FROM resale_hdb_price
+-- GROUP BY 1
+-- ORDER BY 2 DESC
+
+
 -- 건물 동 번호 종류별 카운트 확인
 -- SELECT blk_no, COUNT(blk_no) AS cnt_blk, address
 -- FROM resale_hdb_price
@@ -178,7 +185,263 @@
 -- (MAX(distance_to_pri_school_meters) - MIN(distance_to_pri_school_meters)) as rng
 -- FROM resale_hdb_price
 
-SELECT latitude, longitude, flat_type, flat_model, resale_price
+-- 가격 top 1800 주택 위경도 확인(지도 시각화 용)
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price
+-- FROM resale_hdb_price
+-- ORDER BY 5 DESC
+-- LIMIT 1800
+
+-- 가격 bot 1800 주택 위경도 확인(지도 시각화 용)
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price
+-- FROM resale_hdb_price
+-- ORDER BY 5
+-- LIMIT 1800
+
+-- 가격 bot 1800 주택 위경도 확인(지도 시각화 용)
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price
+-- FROM resale_hdb_price
+-- ORDER BY 5
+-- LIMIT 1800
+
+-- 계획구역(area)별 가격  확인
+-- SELECT planning_area_ura, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- GROUP BY 1
+-- ORDER BY 3 DESC
+
+-- 지역(region)별 가격  확인
+-- SELECT region_ura, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- GROUP BY 1
+-- ORDER BY 2 DESC
+
+-- 주소와 우편번호 unique 카운트 비교 확인(키값으로  활용 가능 여부 확인)
+-- SELECT COUNT(distinct address), count(DISTINCT postal)
+-- FROM resale_hdb_price
+
+-- 연도별 위경도 확인
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price
+-- FROM resale_hdb_price
+-- WHERE year(MONTH) = 2024
+-- ORDER BY 5 DESC
+
+-- 면적 당 가격 top 1800 주택 위경도 확인(지도 시각화 용)
+-- SELECT latitude, longitude, flat_type, flat_model, price_per_sqft
+-- FROM resale_hdb_price
+-- ORDER BY 5 DESC
+-- LIMIT 1800
+
+-- 면적 당 가격 bot 1800 주택 위경도 확인(지도 시각화 용)
+-- SELECT latitude, longitude, flat_type, flat_model, price_per_sqft
+-- FROM resale_hdb_price
+-- ORDER BY 5
+-- LIMIT 1800
+
+-- 연도별 가격, 면적당 가격 평균 확인
+-- SELECT year(MONTH) as yrs, avg(resale_price), avg(price_per_sqft)
+-- FROM resale_hdb_price
+-- GROUP BY 1
+-- order BY 1
+
+-- 연도별 가격 좌표 확인(top 200)
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2017
+-- ORDER BY 5 DESC
+-- LIMIT 200
+
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2018
+-- ORDER BY 5 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2019
+-- ORDER BY 5 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2020
+-- ORDER BY 5 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2021
+-- ORDER BY 5 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2022
+-- ORDER BY 5 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2023
+-- ORDER BY 5 DESC
+-- LIMIT 200
+
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2024
+-- ORDER BY 5 DESC
+-- LIMIT 200
+
+-- 연도별 가격 좌표 확인(bot 200)
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2017
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2018
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2019
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2020
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2021
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2022
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2023
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2024
+-- ORDER BY 5
+-- LIMIT 200
+
+-- 연도별 면적 당 가격 좌표 확인(top 200)
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2017
+-- ORDER BY 6 DESC
+-- LIMIT 200
+
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2018
+-- ORDER BY 6 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2019
+-- ORDER BY 6 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2020
+-- ORDER BY 6 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2021
+-- ORDER BY 6 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2022
+-- ORDER BY 6 DESC
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2023
+-- ORDER BY 6 DESC
+-- LIMIT 200
+
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2024
+-- ORDER BY 6 DESC
+-- LIMIT 200
+
+-- 연도별 면적당 가격 좌표 확인(bot 200)
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2017
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2018
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2019
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2020
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2021
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2022
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2023
+-- ORDER BY 5
+-- LIMIT 200
+-- 
+-- SELECT latitude, longitude, flat_type, flat_model, resale_price, price_per_sqft
+-- FROM resale_hdb_price
+-- WHERE YEAR(MONTH)=2024
+-- ORDER BY 5
+-- LIMIT 200
+
+SELECT YEAR(MONTH), avg(resale_price)
 FROM resale_hdb_price
-ORDER BY 5 DESC
-LIMIT 1800
+WHERE planning_area_ura='sengkang'
+GROUP BY 1 
+
+
