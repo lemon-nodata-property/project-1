@@ -1,0 +1,1760 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='(작업용) resale_hdb_price' inline='true' name='federated.04u6wec14uds481emj0ig0agkt5p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='(작업용) resale_hdb_price' name='excel-direct.05sey5q1ehzw3t1elpkim1f48xe6'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Dropbox/프로그래머스 데이터 분석 데브코스(2024)/1차 팀프로젝트/데이터셋/싱가포르 공공임대주택 가격 데이터(2017~2024)/(작업용) resale_hdb_price.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.05sey5q1ehzw3t1elpkim1f48xe6' name='(작업용) resale_hdb_price' table='[&apos;(작업용) resale_hdb_price$&apos;]' type='table'>
+          <columns gridOrigin='A1:AG10001:no:A1:AG10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='date' name='month' ordinal='1' />
+            <column datatype='string' name='flat_type' ordinal='2' />
+            <column datatype='string' name='storey_range' ordinal='3' />
+            <column datatype='integer' name='floor_area_sqm' ordinal='4' />
+            <column datatype='real' name='pyung' ordinal='5' />
+            <column datatype='string' name='flat_model' ordinal='6' />
+            <column datatype='integer' name='resale_price' ordinal='7' />
+            <column datatype='real' name='floor_area_sqft' ordinal='8' />
+            <column datatype='real' name='price_per_sqft' ordinal='9' />
+            <column datatype='string' name='blk_no' ordinal='10' />
+            <column datatype='string' name='road_name' ordinal='11' />
+            <column datatype='string' name='building' ordinal='12' />
+            <column datatype='integer' name='postal' ordinal='13' />
+            <column datatype='string' name='address' ordinal='14' />
+            <column datatype='date' name='lease_commence_date' ordinal='15' />
+            <column datatype='string' name='planning_area_ura' ordinal='16' />
+            <column datatype='string' name='region_ura' ordinal='17' />
+            <column datatype='real' name='x' ordinal='18' />
+            <column datatype='real' name='y' ordinal='19' />
+            <column datatype='real' name='latitude' ordinal='20' />
+            <column datatype='real' name='longitude' ordinal='21' />
+            <column datatype='string' name='closest_mrt_station' ordinal='22' />
+            <column datatype='real' name='distance_to_mrt_meters' ordinal='23' />
+            <column datatype='string' name='transport_type' ordinal='24' />
+            <column datatype='string' name='line_color' ordinal='25' />
+            <column datatype='real' name='distance_to_cbd' ordinal='26' />
+            <column datatype='string' name='closest_pri_school' ordinal='27' />
+            <column datatype='real' name='distance_to_pri_school_meters' ordinal='28' />
+            <column datatype='real' name='F30' ordinal='29' />
+            <column datatype='string' name='F31' ordinal='30' />
+            <column datatype='string' name='F32' ordinal='31' />
+            <column datatype='string' name='F33' ordinal='32' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.05sey5q1ehzw3t1elpkim1f48xe6' name='(작업용) resale_hdb_price' table='[&apos;(작업용) resale_hdb_price$&apos;]' type='table'>
+          <columns gridOrigin='A1:AG10001:no:A1:AG10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='date' name='month' ordinal='1' />
+            <column datatype='string' name='flat_type' ordinal='2' />
+            <column datatype='string' name='storey_range' ordinal='3' />
+            <column datatype='integer' name='floor_area_sqm' ordinal='4' />
+            <column datatype='real' name='pyung' ordinal='5' />
+            <column datatype='string' name='flat_model' ordinal='6' />
+            <column datatype='integer' name='resale_price' ordinal='7' />
+            <column datatype='real' name='floor_area_sqft' ordinal='8' />
+            <column datatype='real' name='price_per_sqft' ordinal='9' />
+            <column datatype='string' name='blk_no' ordinal='10' />
+            <column datatype='string' name='road_name' ordinal='11' />
+            <column datatype='string' name='building' ordinal='12' />
+            <column datatype='integer' name='postal' ordinal='13' />
+            <column datatype='string' name='address' ordinal='14' />
+            <column datatype='date' name='lease_commence_date' ordinal='15' />
+            <column datatype='string' name='planning_area_ura' ordinal='16' />
+            <column datatype='string' name='region_ura' ordinal='17' />
+            <column datatype='real' name='x' ordinal='18' />
+            <column datatype='real' name='y' ordinal='19' />
+            <column datatype='real' name='latitude' ordinal='20' />
+            <column datatype='real' name='longitude' ordinal='21' />
+            <column datatype='string' name='closest_mrt_station' ordinal='22' />
+            <column datatype='real' name='distance_to_mrt_meters' ordinal='23' />
+            <column datatype='string' name='transport_type' ordinal='24' />
+            <column datatype='string' name='line_color' ordinal='25' />
+            <column datatype='real' name='distance_to_cbd' ordinal='26' />
+            <column datatype='string' name='closest_pri_school' ordinal='27' />
+            <column datatype='real' name='distance_to_pri_school_meters' ordinal='28' />
+            <column datatype='real' name='F30' ordinal='29' />
+            <column datatype='string' name='F31' ordinal='30' />
+            <column datatype='string' name='F32' ordinal='31' />
+            <column datatype='string' name='F33' ordinal='32' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AG10001:no:A1:AG10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flat_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[flat_type]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>flat_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>storey_range</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[storey_range]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>storey_range</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>floor_area_sqm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[floor_area_sqm]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>floor_area_sqm</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pyung</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pyung]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>pyung</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flat_model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[flat_model]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>flat_model</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resale_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[resale_price]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>resale_price</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>floor_area_sqft</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[floor_area_sqft]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>floor_area_sqft</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_per_sqft</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_per_sqft]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>price_per_sqft</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blk_no</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[blk_no]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>blk_no</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>road_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[road_name]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>road_name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>building</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[building]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>building</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>postal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[postal]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>postal</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lease_commence_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[lease_commence_date]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>lease_commence_date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>planning_area_ura</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[planning_area_ura]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>planning_area_ura</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region_ura</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[region_ura]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>region_ura</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>closest_mrt_station</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[closest_mrt_station]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>closest_mrt_station</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance_to_mrt_meters</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance_to_mrt_meters]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>distance_to_mrt_meters</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transport_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[transport_type]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>transport_type</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>line_color</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[line_color]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>line_color</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance_to_cbd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance_to_cbd]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>distance_to_cbd</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>closest_pri_school</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[closest_pri_school]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>closest_pri_school</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance_to_pri_school_meters</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance_to_pri_school_meters]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>distance_to_pri_school_meters</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F30</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F30]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>F30</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F31</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F31]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>F31</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F32</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F32]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>F32</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F33</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F33]</local-name>
+            <parent-name>[(작업용) resale_hdb_price]</parent-name>
+            <remote-alias>F33</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Distance To Cbd(구간차원)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[distance_to_cbd]' peg='0' size='277' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='(작업용) resale_hdb_price' datatype='table' name='[__tableau_internal_object_id__].[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]' role='measure' type='quantitative' />
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='Blk No' datatype='string' name='[blk_no]' role='dimension' type='nominal' />
+      <column caption='Building' datatype='string' name='[building]' role='dimension' type='nominal' />
+      <column caption='Closest Mrt Station' datatype='string' name='[closest_mrt_station]' role='dimension' type='nominal' />
+      <column caption='Closest Pri School' datatype='string' name='[closest_pri_school]' role='dimension' type='nominal' />
+      <column caption='Distance To Cbd' datatype='real' name='[distance_to_cbd]' role='measure' type='quantitative' />
+      <column caption='Distance To Mrt Meters' datatype='real' name='[distance_to_mrt_meters]' role='measure' type='quantitative' />
+      <column caption='Distance To Pri School Meters' datatype='real' name='[distance_to_pri_school_meters]' role='measure' type='quantitative' />
+      <column caption='Flat Model' datatype='string' name='[flat_model]' role='dimension' type='nominal' />
+      <column caption='Flat Type' datatype='string' name='[flat_type]' role='dimension' type='nominal' />
+      <column caption='Floor Area Sqft' datatype='real' name='[floor_area_sqft]' role='measure' type='quantitative' />
+      <column caption='Floor Area Sqm' datatype='integer' name='[floor_area_sqm]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Lease Commence Date' datatype='date' name='[lease_commence_date]' role='dimension' type='ordinal' />
+      <column caption='Line Color' datatype='string' name='[line_color]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+      <column caption='Planning Area Ura' datatype='string' name='[planning_area_ura]' role='dimension' type='nominal' />
+      <column caption='Postal' datatype='integer' name='[postal]' role='measure' type='quantitative' />
+      <column caption='Price Per Sqft' datatype='real' name='[price_per_sqft]' role='measure' type='quantitative' />
+      <column caption='Pyung' datatype='real' name='[pyung]' role='measure' type='quantitative' />
+      <column caption='Region Ura' datatype='string' name='[region_ura]' role='dimension' type='nominal' />
+      <column caption='Resale Price' datatype='integer' name='[resale_price]' role='measure' type='quantitative' />
+      <column caption='Road Name' datatype='string' name='[road_name]' role='dimension' type='nominal' />
+      <column caption='Storey Range' datatype='string' name='[storey_range]' role='dimension' type='nominal' />
+      <column caption='Transport Type' datatype='string' name='[transport_type]' role='dimension' type='nominal' />
+      <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+      <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/SSW/AppData/Local/Temp/TableauTemp/#TableauTemp_0bcmjqm0ndhc3418x6kwz0cuzp1q.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/03/2024 03:08:52 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>182117</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>113</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flat_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[flat_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flat_type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>storey_range</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[storey_range]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>storey_range</remote-alias>
+              <ordinal>3</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>floor_area_sqm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[floor_area_sqm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>floor_area_sqm</remote-alias>
+              <ordinal>4</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>252</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pyung</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pyung]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pyung</remote-alias>
+              <ordinal>5</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>252</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flat_model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[flat_model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flat_model</remote-alias>
+              <ordinal>6</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>resale_price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[resale_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>resale_price</remote-alias>
+              <ordinal>7</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2852</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>floor_area_sqft</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[floor_area_sqft]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>floor_area_sqft</remote-alias>
+              <ordinal>8</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>264</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_per_sqft</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_per_sqft]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_per_sqft</remote-alias>
+              <ordinal>9</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21317</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>blk_no</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[blk_no]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>blk_no</remote-alias>
+              <ordinal>10</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9056</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>road_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[road_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>road_name</remote-alias>
+              <ordinal>11</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2038</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>building</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[building]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>building</remote-alias>
+              <ordinal>12</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2427</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>postal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[postal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>postal</remote-alias>
+              <ordinal>13</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32509</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>address</remote-alias>
+              <ordinal>14</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32509</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lease_commence_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[lease_commence_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lease_commence_date</remote-alias>
+              <ordinal>15</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2075</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>planning_area_ura</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[planning_area_ura]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>planning_area_ura</remote-alias>
+              <ordinal>16</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region_ura</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region_ura]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region_ura</remote-alias>
+              <ordinal>17</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>x</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>x</remote-alias>
+              <ordinal>18</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32509</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>y</remote-alias>
+              <ordinal>19</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32509</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>20</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32509</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>21</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32509</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>closest_mrt_station</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[closest_mrt_station]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>closest_mrt_station</remote-alias>
+              <ordinal>22</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>264</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance_to_mrt_meters</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distance_to_mrt_meters]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance_to_mrt_meters</remote-alias>
+              <ordinal>23</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32509</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transport_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transport_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transport_type</remote-alias>
+              <ordinal>24</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>line_color</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[line_color]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>line_color</remote-alias>
+              <ordinal>25</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance_to_cbd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distance_to_cbd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance_to_cbd</remote-alias>
+              <ordinal>26</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32509</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>closest_pri_school</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[closest_pri_school]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>closest_pri_school</remote-alias>
+              <ordinal>27</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>259</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance_to_pri_school_meters</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distance_to_pri_school_meters]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance_to_pri_school_meters</remote-alias>
+              <ordinal>28</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32509</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F30</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F30]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F30</remote-alias>
+              <ordinal>29</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F31</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F31]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F31</remote-alias>
+              <ordinal>30</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F32</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F32]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F32</remote-alias>
+              <ordinal>31</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F33</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F33]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F33</remote-alias>
+              <ordinal>32</ordinal>
+              <family>(작업용) resale_hdb_price</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='(작업용) resale_hdb_price' id='(작업용) resale!hdb!price_520F37B02DEA403987A9731AC1AB8A81'>
+            <properties context=''>
+              <relation connection='excel-direct.05sey5q1ehzw3t1elpkim1f48xe6' name='(작업용) resale_hdb_price' table='[&apos;(작업용) resale_hdb_price$&apos;]' type='table'>
+                <columns gridOrigin='A1:AG10001:no:A1:AG10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='date' name='month' ordinal='1' />
+                  <column datatype='string' name='flat_type' ordinal='2' />
+                  <column datatype='string' name='storey_range' ordinal='3' />
+                  <column datatype='integer' name='floor_area_sqm' ordinal='4' />
+                  <column datatype='real' name='pyung' ordinal='5' />
+                  <column datatype='string' name='flat_model' ordinal='6' />
+                  <column datatype='integer' name='resale_price' ordinal='7' />
+                  <column datatype='real' name='floor_area_sqft' ordinal='8' />
+                  <column datatype='real' name='price_per_sqft' ordinal='9' />
+                  <column datatype='string' name='blk_no' ordinal='10' />
+                  <column datatype='string' name='road_name' ordinal='11' />
+                  <column datatype='string' name='building' ordinal='12' />
+                  <column datatype='integer' name='postal' ordinal='13' />
+                  <column datatype='string' name='address' ordinal='14' />
+                  <column datatype='date' name='lease_commence_date' ordinal='15' />
+                  <column datatype='string' name='planning_area_ura' ordinal='16' />
+                  <column datatype='string' name='region_ura' ordinal='17' />
+                  <column datatype='real' name='x' ordinal='18' />
+                  <column datatype='real' name='y' ordinal='19' />
+                  <column datatype='real' name='latitude' ordinal='20' />
+                  <column datatype='real' name='longitude' ordinal='21' />
+                  <column datatype='string' name='closest_mrt_station' ordinal='22' />
+                  <column datatype='real' name='distance_to_mrt_meters' ordinal='23' />
+                  <column datatype='string' name='transport_type' ordinal='24' />
+                  <column datatype='string' name='line_color' ordinal='25' />
+                  <column datatype='real' name='distance_to_cbd' ordinal='26' />
+                  <column datatype='string' name='closest_pri_school' ordinal='27' />
+                  <column datatype='real' name='distance_to_pri_school_meters' ordinal='28' />
+                  <column datatype='real' name='F30' ordinal='29' />
+                  <column datatype='string' name='F31' ordinal='30' />
+                  <column datatype='string' name='F32' ordinal='31' />
+                  <column datatype='string' name='F33' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>가격*거리 산포도</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='(작업용) resale_hdb_price' name='federated.04u6wec14uds481emj0ig0agkt5p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04u6wec14uds481emj0ig0agkt5p'>
+            <column caption='Distance To Cbd' datatype='real' name='[distance_to_cbd]' role='measure' type='quantitative' />
+            <column caption='Distance To Mrt Meters' datatype='real' name='[distance_to_mrt_meters]' role='measure' type='quantitative' />
+            <column caption='Distance To Pri School Meters' datatype='real' name='[distance_to_pri_school_meters]' role='measure' type='quantitative' />
+            <column-instance column='[distance_to_cbd]' derivation='None' name='[none:distance_to_cbd:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[distance_to_mrt_meters]' derivation='None' name='[none:distance_to_mrt_meters:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[distance_to_pri_school_meters]' derivation='None' name='[none:distance_to_pri_school_meters:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price_per_sqft]' derivation='None' name='[none:price_per_sqft:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region_ura]' derivation='None' name='[none:region_ura:nk]' pivot='key' type='nominal' />
+            <column caption='Price Per Sqft' datatype='real' name='[price_per_sqft]' role='measure' type='quantitative' />
+            <column caption='Region Ura' datatype='string' name='[region_ura]' role='dimension' type='nominal' />
+            <column caption='Resale Price' datatype='integer' name='[resale_price]' role='measure' type='quantitative' />
+            <column-instance column='[resale_price]' derivation='Sum' name='[sum:resale_price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04u6wec14uds481emj0ig0agkt5p].[none:region_ura:nk]'>
+            <groupfilter function='member' level='[none:region_ura:nk]' member='&quot;EAST REGION&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.04u6wec14uds481emj0ig0agkt5p].[none:region_ura:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.2738673985004425' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.04u6wec14uds481emj0ig0agkt5p].[none:distance_to_mrt_meters:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.2738673985004425' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.04u6wec14uds481emj0ig0agkt5p].[none:distance_to_cbd:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.2738673985004425' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.04u6wec14uds481emj0ig0agkt5p].[none:distance_to_pri_school_meters:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.2738673985004425' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.04u6wec14uds481emj0ig0agkt5p].[none:price_per_sqft:qk] + [federated.04u6wec14uds481emj0ig0agkt5p].[sum:resale_price:qk])</rows>
+        <cols>([federated.04u6wec14uds481emj0ig0agkt5p].[none:distance_to_mrt_meters:qk] + ([federated.04u6wec14uds481emj0ig0agkt5p].[none:distance_to_cbd:qk] + [federated.04u6wec14uds481emj0ig0agkt5p].[none:distance_to_pri_school_meters:qk]))</cols>
+      </table>
+      <simple-id uuid='{1E6A744D-736A-4409-9EF2-1CB5A43B6A0E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.04u6wec14uds481emj0ig0agkt5p].[none:region_ura:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04u6wec14uds481emj0ig0agkt5p].[none:Distance To Cbd(구간차원):qk]</field>
+            <field>[federated.04u6wec14uds481emj0ig0agkt5p].[none:distance_to_cbd:qk]</field>
+            <field>[federated.04u6wec14uds481emj0ig0agkt5p].[none:distance_to_mrt_meters:qk]</field>
+            <field>[federated.04u6wec14uds481emj0ig0agkt5p].[none:price_per_sqft:qk]</field>
+            <field>[federated.04u6wec14uds481emj0ig0agkt5p].[none:region_ura:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E7FABB47-8CCD-4438-BB6B-7E28791BEC2C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='192'>
+      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
+      X3b+Hz2xc2Yyz6XAAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
