@@ -1,0 +1,20 @@
+1. 프로젝트 개요 : 
+싱가포르 주택개발부(Housing & Development Board, 이하 HDB)에서 제공하는 실제 공공주택(HDB Flat) 재판매(resale) 데이터에 대한 탐색적 데이터 분석(EDA)를 통해 
+싱가포르의 공공주택시장의 가격과 거래량에 대한 주요 영향요인을 식별하여 향후 주택 투자수요 예측에 기여하고자 함
+
+2. 사용 툴 : 
+- MySQL(DBeaver, Heidi SQL)
+    - 데이터 전처리
+    - 데이터 가공
+- Excel
+    - 데이터 시각화(차트 등)
+- Google Colab
+    - 상관관계 분석 및 위치정보 시각화
+- QGIS
+    - 위치정보 시각화
+
+3. 역할
+백준원 : NORTH-EAST & 발표
+심승우 : WEST & 보고서 취합 & 작성
+윤규리 : NORTH & 서기 & ppt
+박연재 : CENTRAL & EAST
